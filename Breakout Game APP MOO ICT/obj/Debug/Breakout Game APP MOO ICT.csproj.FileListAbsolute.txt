@@ -1,0 +1,11 @@
+C:\Users\mars_\source\Repos\BreakoutGame\Breakout Game APP MOO ICT\bin\Debug\Breakout Game APP MOO ICT.exe.config
+C:\Users\mars_\source\Repos\BreakoutGame\Breakout Game APP MOO ICT\bin\Debug\Breakout Game APP MOO ICT.exe
+C:\Users\mars_\source\Repos\BreakoutGame\Breakout Game APP MOO ICT\bin\Debug\Breakout Game APP MOO ICT.pdb
+C:\Users\mars_\source\Repos\BreakoutGame\Breakout Game APP MOO ICT\obj\Debug\Breakout Game APP MOO ICT.csproj.AssemblyReference.cache
+C:\Users\mars_\source\Repos\BreakoutGame\Breakout Game APP MOO ICT\obj\Debug\Breakout Game APP MOO ICT.csproj.SuggestedBindingRedirects.cache
+C:\Users\mars_\source\Repos\BreakoutGame\Breakout Game APP MOO ICT\obj\Debug\Breakout_Game_APP_MOO_ICT.Form1.resources
+C:\Users\mars_\source\Repos\BreakoutGame\Breakout Game APP MOO ICT\obj\Debug\Breakout_Game_APP_MOO_ICT.Properties.Resources.resources
+C:\Users\mars_\source\Repos\BreakoutGame\Breakout Game APP MOO ICT\obj\Debug\Breakout Game APP MOO ICT.csproj.GenerateResource.cache
+C:\Users\mars_\source\Repos\BreakoutGame\Breakout Game APP MOO ICT\obj\Debug\Breakout Game APP MOO ICT.csproj.CoreCompileInputs.cache
+C:\Users\mars_\source\Repos\BreakoutGame\Breakout Game APP MOO ICT\obj\Debug\Breakout Game APP MOO ICT.exe
+C:\Users\mars_\source\Repos\BreakoutGame\Breakout Game APP MOO ICT\obj\Debug\Breakout Game APP MOO ICT.pdb
