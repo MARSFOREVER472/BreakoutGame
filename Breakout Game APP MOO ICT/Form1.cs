@@ -59,19 +59,46 @@ namespace Breakout_Game_APP_MOO_ICT
             }
         }
 
+        // Método privado de un evento ejecutable con temporizador.
         private void mainGameTimerEvent(object sender, EventArgs e)
         {
-            // Próximamente.
+            if(goLeft == true && player.Left > 0) // Desde una distancia mayor que 0 hacia la izquierda.
+            {
+                player.Left -= playerSpeed; // Se descuenta la velocidad y va hacia la izquierda.
+            }
+
+            if (goRight == true && player.Right < 700) // Desde una distancia menor que 700 hacia la derecha.
+            {
+                player.Left += playerSpeed; // Se incrementa la velocidad y va hacia la derecha.
+            }
         }
 
+        // Método privado de la tecla hacia abajo.
         private void keyisdown(object sender, KeyEventArgs e)
         {
-            // Próximamente.
+            if(e.KeyCode == Keys.Left) // Si la tecla presiona hacia la izquierda.
+            {
+                goLeft = true; // Va hacia la izquierda.
+            }
+
+            if (e.KeyCode == Keys.Right) // Si la tecla presiona hacia la derecha.
+            {
+                goRight = true; // Va hacia la derecha.
+            }
         }
 
+        // Método privado de la tecla hacia arriba.
         private void keyisup(object sender, KeyEventArgs e)
         {
-            // Próximamente.
+            if (e.KeyCode == Keys.Left) // Si la tecla presiona hacia la izquierda.
+            {
+                goLeft = false; // No va hacia la izquierda.
+            }
+
+            if (e.KeyCode == Keys.Right) // Si la tecla presiona hacia la derecha.
+            {
+                goRight = false; // No va hacia la derecha.
+            }
         }
     }
 }

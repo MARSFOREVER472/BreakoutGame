@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.txtScore = new System.Windows.Forms.Label();
             this.Ball = new System.Windows.Forms.PictureBox();
-            this.Platform = new System.Windows.Forms.PictureBox();
+            this.player = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -49,7 +49,7 @@
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Ball)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Platform)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -85,14 +85,14 @@
             this.Ball.TabIndex = 1;
             this.Ball.TabStop = false;
             // 
-            // Platform
+            // player
             // 
-            this.Platform.BackColor = System.Drawing.Color.White;
-            this.Platform.Location = new System.Drawing.Point(316, 491);
-            this.Platform.Name = "Platform";
-            this.Platform.Size = new System.Drawing.Size(100, 32);
-            this.Platform.TabIndex = 2;
-            this.Platform.TabStop = false;
+            this.player.BackColor = System.Drawing.Color.White;
+            this.player.Location = new System.Drawing.Point(700, 492);
+            this.player.Name = "player";
+            this.player.Size = new System.Drawing.Size(100, 32);
+            this.player.TabIndex = 2;
+            this.player.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -254,7 +254,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(742, 546);
+            this.ClientSize = new System.Drawing.Size(822, 546);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox13);
@@ -270,7 +270,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.Platform);
+            this.Controls.Add(this.player);
             this.Controls.Add(this.Ball);
             this.Controls.Add(this.txtScore);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -282,7 +282,7 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
             ((System.ComponentModel.ISupportInitialize)(this.Ball)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Platform)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -307,7 +307,7 @@
 
         private System.Windows.Forms.Label txtScore;
         private System.Windows.Forms.PictureBox Ball;
-        private System.Windows.Forms.PictureBox Platform;
+        private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
