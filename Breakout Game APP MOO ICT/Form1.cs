@@ -71,6 +71,32 @@ namespace Breakout_Game_APP_MOO_ICT
             {
                 player.Left += playerSpeed; // Se incrementa la velocidad y va hacia la derecha.
             }
+
+            // Variables para que la pelota pueda rebotar sobre la plataforma hacia ambos lados.
+
+            ball.Left += ballx;
+            ball.Top += bally;
+
+            // Crearemos una condición if para que la bola se mueva en un intervalo < 0 y > 775.
+
+            if (ball.Left < 0 || ball.Left > 775) // Para la bola que se mueve de ambos lados con la plataforma.
+            {
+                ballx = -ballx;
+            }
+
+            // Nuevamente crearemos otro if para que pueda rebotar la bola sobre la plataforma.
+
+            if (ball.Top < 0)
+            {
+                bally = -bally;
+            }
+
+            // Crearemos otro if para que la bola pueda intersectar dentro del juego.
+
+            if (ball.Bounds.IntersectsWith(player.Bounds)) // Se define por límites al rebotar la pelota por sobre la plataforma.
+            {
+                bally = rnd.Next(5, 12) * -1;
+            }
         }
 
         // Método privado de la tecla hacia abajo.

@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.txtScore = new System.Windows.Forms.Label();
-            this.Ball = new System.Windows.Forms.PictureBox();
+            this.ball = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -48,7 +48,7 @@
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.Ball)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ball)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -76,19 +76,19 @@
             this.txtScore.TabIndex = 0;
             this.txtScore.Text = "Score: 0";
             // 
-            // Ball
+            // ball
             // 
-            this.Ball.BackColor = System.Drawing.Color.Yellow;
-            this.Ball.Location = new System.Drawing.Point(354, 381);
-            this.Ball.Name = "Ball";
-            this.Ball.Size = new System.Drawing.Size(25, 23);
-            this.Ball.TabIndex = 1;
-            this.Ball.TabStop = false;
+            this.ball.BackColor = System.Drawing.Color.Yellow;
+            this.ball.Location = new System.Drawing.Point(353, 334);
+            this.ball.Name = "ball";
+            this.ball.Size = new System.Drawing.Size(25, 23);
+            this.ball.TabIndex = 1;
+            this.ball.TabStop = false;
             // 
             // player
             // 
             this.player.BackColor = System.Drawing.Color.White;
-            this.player.Location = new System.Drawing.Point(700, 492);
+            this.player.Location = new System.Drawing.Point(316, 492);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(100, 32);
             this.player.TabIndex = 2;
@@ -271,7 +271,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.player);
-            this.Controls.Add(this.Ball);
+            this.Controls.Add(this.ball);
             this.Controls.Add(this.txtScore);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
@@ -281,7 +281,7 @@
             this.Text = "Breakout Game App";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
-            ((System.ComponentModel.ISupportInitialize)(this.Ball)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ball)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -306,7 +306,7 @@
         #endregion
 
         private System.Windows.Forms.Label txtScore;
-        private System.Windows.Forms.PictureBox Ball;
+        private System.Windows.Forms.PictureBox ball;
         private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
