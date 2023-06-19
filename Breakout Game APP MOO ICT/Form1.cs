@@ -62,7 +62,7 @@ namespace Breakout_Game_APP_MOO_ICT
         // Método privado de un evento ejecutable con temporizador.
         private void mainGameTimerEvent(object sender, EventArgs e)
         {
-            if(goLeft == true && player.Left > 0) // Desde una distancia mayor que 0 hacia la izquierda.
+            if (goLeft == true && player.Left > 0) // Desde una distancia mayor que 0 hacia la izquierda.
             {
                 player.Left -= playerSpeed; // Se descuenta la velocidad y va hacia la izquierda.
             }
@@ -91,11 +91,44 @@ namespace Breakout_Game_APP_MOO_ICT
                 bally = -bally;
             }
 
-            // Crearemos otro if para que la bola pueda intersectar dentro del juego.
+            // Crearemos otro if para que la bola pueda rebotar por sobre la plataforma.
 
-            if (ball.Bounds.IntersectsWith(player.Bounds)) // Se define por límites al rebotar la pelota por sobre la plataforma.
+            if (ball.Bounds.IntersectsWith(player.Bounds)) // Si la bola choca por sobre la plataforma.
             {
                 bally = rnd.Next(5, 12) * -1;
+
+                // Crearemos otro método para hacer que la bola se mueva rápido por sobre la plataforma.
+
+                if (ballx < 0)
+                {
+                    ballx = rnd.Next(5, 12) * -1;
+                }
+
+                // En caso contrario...
+
+                else
+                {
+                    ballx = rnd.Next(5, 12);
+                }
+            }
+
+            // Crearemos otro ciclo foreach para que cada bloque pueda ser removido al chocar con la bola.
+
+            foreach (Control x in this.Controls)
+            {
+                if (x is PictureBox && (string)x.Tag == "blocks") // Si son bloques de colores aleatorios.
+                {
+                    if (ball.Bounds.IntersectsWith(x.Bounds)) // Si choca con algunos bloques de colores.
+                    {
+                        score += 1; // Suma 1 punto.
+
+                        bally = - bally; // Dependiendo de la altura de la bola según la fuerza de gravedad al chocar con los bloques.
+
+                        this.Controls.Remove(x); // Elimina todos los bloques de colores.
+                    }
+
+
+                }
             }
         }
 
