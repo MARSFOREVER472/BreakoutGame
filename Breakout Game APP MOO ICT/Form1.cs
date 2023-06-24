@@ -59,9 +59,21 @@ namespace Breakout_Game_APP_MOO_ICT
             }
         }
 
+        // Crearemos otro método privado para desplegar un mensaje que finalizó del juego.
+
+        private void gameOver(string message)
+        {
+            isGameOver = true; // Terminó el juego.
+            gameTimer.Stop(); // Paraliza el contador o se acaba el tiempo en este método.
+
+            txtScore.Text = "Score: " + score + " " + message; // Se imprime un mensaje mediante texto con un string.
+        }
+
         // Método privado de un evento ejecutable con temporizador.
         private void mainGameTimerEvent(object sender, EventArgs e)
         {
+            txtScore.Text = "Score: " + score; // Suma 1 punto cuando choca con cualquier bloque.
+
             if (goLeft == true && player.Left > 0) // Desde una distancia mayor que 0 hacia la izquierda.
             {
                 player.Left -= playerSpeed; // Se descuenta la velocidad y va hacia la izquierda.
@@ -129,6 +141,18 @@ namespace Breakout_Game_APP_MOO_ICT
 
 
                 }
+            }
+
+            // Crearemos otro if para mayores detalles tras el inicio del videojuego.
+
+            if (score == 15) // Si el puntaje es igual a 15.
+            {
+                gameOver("Has ganado la partida! :)"); // Llama al método gameOver diciendo que ganó la partida.
+            }
+
+            if (ball.Top > 580) // Si la bola alcanzó el límite inferior del juego.
+            {
+                gameOver("Lo siento, perdió la partida! :("); // Llama al método gameOver diciendo que perdió la partida.
             }
         }
 

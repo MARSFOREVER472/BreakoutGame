@@ -88,7 +88,7 @@
             // player
             // 
             this.player.BackColor = System.Drawing.Color.White;
-            this.player.Location = new System.Drawing.Point(316, 492);
+            this.player.Location = new System.Drawing.Point(316, 502);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(100, 32);
             this.player.TabIndex = 2;
