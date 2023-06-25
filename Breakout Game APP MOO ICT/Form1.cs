@@ -26,13 +26,15 @@ namespace Breakout_Game_APP_MOO_ICT
         int bally; // Altura de la bola.
         int playerSpeed; // Velocidad del jugador.
 
-        Random rnd = new Random(); // Variable que se mueve automáticamente la bola.
+        Random rnd = new Random(); // Variable que puede realizar cualquier modificación de manera aleatoria.
+
+        PictureBox[] blockArray; // Bloques mediante una lista de arreglos.
 
         // Método inicial.
         public Form1()
         {
             InitializeComponent(); // Inicializa todos los componentes del juego.
-            setupGame(); // Llamado del método privado.
+            PlaceBlocks(); // Llamado del método privado.
         }
 
         // Método de ajustes a los componentes del juego.
@@ -67,6 +69,51 @@ namespace Breakout_Game_APP_MOO_ICT
             gameTimer.Stop(); // Paraliza el contador o se acaba el tiempo en este método.
 
             txtScore.Text = "Score: " + score + " " + message; // Se imprime un mensaje mediante texto con un string.
+        }
+
+        // Método que permite ordenar los bloques de manera eficiente.
+
+        private void PlaceBlocks()
+        {
+            blockArray = new PictureBox[15]; // Se añade automáticamente la cantidad de bloques (PictureBox) mediante arreglos.
+
+            // Declaramos las variables por defecto para el juego.
+
+            int a = 0;
+            int top = 50;
+            int left = 100;
+
+            // Utilizaremos el ciclo for pra definir las dimensiones de los bloques.
+
+            for (int i = 0; i < blockArray.Length; i++)
+            {
+                blockArray[i] = new PictureBox(); // Se añade bloques de tipo PictureBox en el juego.
+                blockArray[i].Height = 32; // Altura máxima del ordenamiento de bloques.
+                blockArray[i].Width = 100; // Ancho máximo del ordenamiento de bloques.
+                blockArray[i].Tag = "blocks"; // Se define como blocks a los bloques ordenados.
+                blockArray[i].BackColor = Color.White; // Los bloques por defecto serán blancos.
+
+                // Haremos un recorrido completo con el if para que la bola pueda colisionar directamente con los bloques.
+
+                if (a == 5) // Si el límite del juego es igual a 5.
+                {
+                    top = top + 50;
+                    left = 100;
+                    a = 0;
+                }
+
+                if (a < 5) // Si el límite del juego es menor a 5.
+                {
+                    a++;
+                    blockArray[i].Left = left;
+                    blockArray[i].Top = top;
+                    this.Controls.Add(blockArray[i]);
+                    left = left + 130;
+                }
+            }
+            setupGame();
+
+
         }
 
         // Método privado de un evento ejecutable con temporizador.
