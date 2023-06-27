@@ -22,8 +22,8 @@ namespace Breakout_Game_APP_MOO_ICT
         // Variables numéricas enteras.
 
         int score; // Puntuación total.
-        int ballx; // Ancho de la bola.
-        int bally; // Altura de la bola.
+        int ballx; // Movimiento horizontal de la bola.
+        int bally; // Movimiento vertical o lanzamiento de la bola mediante caída libre.
         int playerSpeed; // Velocidad del jugador.
 
         Random rnd = new Random(); // Variable que puede realizar cualquier modificación de manera aleatoria.
@@ -45,7 +45,7 @@ namespace Breakout_Game_APP_MOO_ICT
             ballx = 5; // Tamaño inicial de la bola.
             bally = 5; // Altura inicial de la bola.
             playerSpeed = 12; // Velocidad inicial del jugador.
-            txtScore.Text = "Score: " + score;
+            txtScore.Text = "Score: " + score; // Score: 0 (Example).
 
             // Definimos la posición inicial de la bola.
 
@@ -171,11 +171,11 @@ namespace Breakout_Game_APP_MOO_ICT
 
             // Crearemos otro if para que la bola pueda rebotar por sobre la plataforma.
 
-            if (ball.Bounds.IntersectsWith(player.Bounds)) // Si la bola choca por sobre la plataforma.
+            if (ball.Bounds.IntersectsWith(player.Bounds)) // Si la bola pueda intersectar por sobre la plataforma.
             {
                 bally = rnd.Next(5, 12) * -1;
 
-                // Crearemos otro método para hacer que la bola se mueva rápido por sobre la plataforma.
+                // Si el movimiento horizontal de la bola es menor a 0.
 
                 if (ballx < 0)
                 {
@@ -211,7 +211,7 @@ namespace Breakout_Game_APP_MOO_ICT
 
             // Crearemos otro if para mayores detalles tras el inicio del videojuego.
 
-            if (score == 15) // Si el puntaje es igual a 15.
+            if (score == 15) // Si el puntaje es igual a 15 o eliminó todos los bloques mediante arreglos.
             {
                 gameOver("Has ganado la partida! :) Presiona ENTER para continuar"); // Llama al método gameOver diciendo que ganó la partida.
             }
