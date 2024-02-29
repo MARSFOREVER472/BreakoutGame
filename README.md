@@ -6,3 +6,17 @@
 - _En este tutorial no utilizaremos bibliotecas mucho más avanzadas, tales como XNA, MonoGame, DirectX o cualquier otra._
 - _Simplemente usaremos una aplicación de Windows y programación en C# para crear completamente un videojuego desde cero._
 
+Objetivos de la lección -
+
+1) Crea un juego sencillo usando botones, cuadros de imágenes y un temporizador.
+
+2) Cree un bucle de control para recorrer los componentes del sistema e identificar cuadros de imágenes.
+
+3) Cree cuadros de imágenes con diferentes etiquetas e identifíquelos usando c#
+
+4) Mantener la puntuación dentro del juego.
+
+5) Ejecutar el escenario de ganar o perder para el jugador.
+
+6) Animar la paleta y la pelota para ofrecer un juego gratificante para el usuario.
+
