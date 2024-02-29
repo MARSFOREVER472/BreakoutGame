@@ -16,7 +16,7 @@
 
 4) _Mantener la puntuación dentro del juego._
 
-5) Ejecutar el escenario de ganar o perder para el jugador.
+5) _Ejecutar el escenario de ganar o perder para el jugador._
 
 6) Animar la paleta y la pelota para ofrecer un juego gratificante para el usuario.
 
