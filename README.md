@@ -8,7 +8,7 @@
 
 **Objetivos de esta lección:**
 
-1) Crea un juego sencillo usando botones, cuadros de imágenes y un temporizador.
+1) _Crea un juego sencillo usando botones, cuadros de imágenes y un temporizador._
 
 2) Cree un bucle de control para recorrer los componentes del sistema e identificar cuadros de imágenes.
 
