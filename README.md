@@ -14,7 +14,7 @@
 
 3) _Cree cuadros de imágenes con diferentes etiquetas e identifíquelos usando C#._
 
-4) Mantener la puntuación dentro del juego.
+4) _Mantener la puntuación dentro del juego._
 
 5) Ejecutar el escenario de ganar o perder para el jugador.
 
