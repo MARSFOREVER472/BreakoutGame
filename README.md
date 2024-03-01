@@ -12,7 +12,7 @@
 
 2) **_Cree un bucle de control para recorrer los componentes del sistema e identificar cuadros de imágenes._**
 
-3) _Cree cuadros de imágenes con diferentes etiquetas e identifíquelos usando C#._
+3) **_Cree cuadros de imágenes con diferentes etiquetas e identifíquelos usando C#._**
 
 4) _Mantener la puntuación dentro del juego._
 
