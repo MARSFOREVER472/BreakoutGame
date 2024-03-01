@@ -10,7 +10,7 @@
 
 1) **_Crear un juego sencillo usando botones, cuadros de imágenes y un temporizador._**
 
-2) **_Cree un bucle de control para recorrer los componentes del sistema e identificar cuadros de imágenes._**
+2) **_Crear un bucle de control para recorrer los componentes del sistema e identificar cuadros de imágenes._**
 
 3) **_Cree cuadros de imágenes con diferentes etiquetas e identifíquelos usando C#._**
 
