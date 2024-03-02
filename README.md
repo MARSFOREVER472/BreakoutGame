@@ -14,6 +14,8 @@ _Traducido del español:_
 - **_En este tutorial no utilizaremos bibliotecas mucho más avanzadas, tales como XNA, MonoGame, DirectX o cualquier otra._**
 - **_Simplemente usaremos una aplicación de Windows y programación en C# para crear completamente un videojuego desde cero._**
 
+Traducido del español:
+
 **Objetivos de esta lección:**
 
 1) **_Crear un juego sencillo usando botones, cuadros de imágenes y un temporizador._**
