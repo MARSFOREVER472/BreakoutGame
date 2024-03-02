@@ -16,7 +16,7 @@ _Traducido del español:_
 
 **Objectives for this lesson:**
 
-1) Create a simple game using buttons, picture boxes and a timer.
+1) _Create a simple game using buttons, picture boxes and a timer._
 
 _Traducido del español:_
 
