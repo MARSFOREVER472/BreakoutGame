@@ -21,6 +21,7 @@ _Traducido del español:_
 3) **_Create and identify image frames with different labels using C#._**
 4) **_Keep score within the game._**
 5) **_Run the win or lose scenario for the player._**
+6) Generate animations to the paddle and the ball to offer a rewarding game for the user.
 
 _Traducido del español:_
 
