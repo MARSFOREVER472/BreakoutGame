@@ -1,5 +1,7 @@
 # BreakoutGame
 
+- **_In this tutorial we will learn how to create or rather develop a fully functional working game using the C# programming language and Visual Studio._**
+
 _Traducido del español:_
 
 - **_En este tutorial aprenderemos a cómo crear o más bien desarrollar un juego de trabajo completamente funcional usando el lenguaje de programación en C# y en  Visual Studio._**
