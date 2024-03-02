@@ -4,7 +4,7 @@
 - **_You will learn how to create multiple image frames and use them within a loop using the same programming language mentioned above._**
 - **_This tutorial is aimed at beginners who are recently learning to code and/or program basic algorithms in C# and what better way to learn than by cloning an all-time classic video game._**
 - **_In this tutorial we will not use much more advanced libraries, such as XNA, MonoGame, DirectX or any other._**
-- We will simply use a Windows application and C# programming to completely create a video game from scratch.
+- _We will simply use a Windows application and C# programming to completely create a video game from scratch._
 
 _Traducido del español:_
 
