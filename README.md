@@ -2,6 +2,7 @@
 
 - **_In this tutorial we will learn how to create or rather develop a fully functional working game using the C# programming language and Visual Studio._**
 - **_You will learn how to create multiple image frames and use them within a loop using the same programming language mentioned above._**
+- This tutorial is aimed at beginners who are recently learning to code and/or program basic algorithms in C# and what better way to learn than by cloning an all-time classic video game.
 
 _Traducido del español:_
 
