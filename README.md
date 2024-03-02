@@ -17,6 +17,7 @@ _Traducido del español:_
 **Objectives for this lesson:**
 
 1) **_Create a simple game using buttons, picture boxes and a timer._**
+2) Create a control loop to loop through system components and identify image frames.
 
 _Traducido del español:_
 
