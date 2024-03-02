@@ -1,6 +1,6 @@
 # BreakoutGame
 
-Traducido del español:
+_Traducido del español:_
 
 - **_En este tutorial aprenderemos a cómo crear o más bien desarrollar un juego de trabajo completamente funcional usando el lenguaje de programación en C# y en  Visual Studio._**
 - **_Usted aprenderá a cómo crear múltiples cuadros de imágenes y utilizarlos dentro de un bucle usando el mismo lenguaje de programación mencionado anteriormente._**
