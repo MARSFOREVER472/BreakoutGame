@@ -20,7 +20,7 @@ _Traducido del español:_
 2) **_Create a control loop to loop through system components and identify image frames._**
 3) **_Create and identify image frames with different labels using C#._**
 4) **_Keep score within the game._**
-5) Run the win or lose scenario for the player.
+5) _Run the win or lose scenario for the player._
 
 _Traducido del español:_
 
