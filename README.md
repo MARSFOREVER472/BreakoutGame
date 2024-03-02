@@ -18,7 +18,7 @@ _Traducido del español:_
 
 1) **_Create a simple game using buttons, picture boxes and a timer._**
 2) **_Create a control loop to loop through system components and identify image frames._**
-3) Create and identify image frames with different labels using C#.
+3) _Create and identify image frames with different labels using C#._
 
 _Traducido del español:_
 
