@@ -1,6 +1,7 @@
 # BreakoutGame
 
 - **_In this tutorial we will learn how to create or rather develop a fully functional working game using the C# programming language and Visual Studio._**
+- **_You will learn how to create multiple image frames and use them within a loop using the same programming language mentioned above._**
 
 _Traducido del español:_
 
