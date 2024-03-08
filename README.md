@@ -6,7 +6,7 @@
 - **_In this tutorial we will not use much more advanced libraries, such as XNA, MonoGame, DirectX or any other._**
 - **_We will simply use a Windows application and C# programming to completely create a video game from scratch._**
 
-_Traducido del español:_
+**_Traducido del español:_**
 
 - **_En este tutorial aprenderemos a cómo crear o más bien desarrollar un juego de trabajo completamente funcional usando el lenguaje de programación en C# y en  Visual Studio._**
 - **_Usted aprenderá a cómo crear múltiples cuadros de imágenes y utilizarlos dentro de un bucle usando el mismo lenguaje de programación mencionado anteriormente._**
