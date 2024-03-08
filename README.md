@@ -33,7 +33,7 @@ _Traducido del español:_
 
 3) **_Crear e identificar cuadros de imágenes con diferentes etiquetas usando C#._**
 
-4) **_Mantener la puntuación dentro del juego._**
+4) **_Mantener la puntuación actual dentro del juego._**
 
 5) **_Ejecutar el escenario de ganar o perder para el jugador._**
 
