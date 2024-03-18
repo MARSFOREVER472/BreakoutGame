@@ -23,7 +23,7 @@
 5) **_Run the win or lose scenario for the player._**
 6) **_Generate animations to the paddle and the ball to offer a rewarding game for the user._**
 
-_Traducido del español:_
+**_Traducido del español:_**
 
 **Objetivos de esta lección:**
 
