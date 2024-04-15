@@ -40,11 +40,22 @@ namespace Breakout_Game_APP_MOO_ICT
         // Método de ajustes a los componentes del juego.
         private void setupGame()
         {
+            isGameOver = false;
             score = 0; // Puntuación inicial del juego.
             ballx = 5; // Tamaño inicial de la bola.
             bally = 5; // Altura inicial de la bola.
             playerSpeed = 12; // Velocidad inicial del jugador.
             txtScore.Text = "Score: " + score;
+
+            // Definimos la posición inicial de la bola.
+
+            ball.Left = 353;
+            ball.Top = 334;
+
+            // Definimos la posición inicial de la plataforma.
+
+            player.Left = 316;
+            player.Top = 502;
 
             // Se inicializa con contador de tiempo.
 
@@ -112,8 +123,16 @@ namespace Breakout_Game_APP_MOO_ICT
                 }
             }
             setupGame();
+        }
 
+        // Crearemos otro método para eliminar de manera más detallada los bloques mediante arreglos.
 
+        private void removeBlocks()
+        {
+            foreach (PictureBox x in blockArray)
+            {
+                this.Controls.Remove(x);
+            }
         }
 
         // Método privado de un evento ejecutable con temporizador.
@@ -194,12 +213,12 @@ namespace Breakout_Game_APP_MOO_ICT
 
             if (score == 15) // Si el puntaje es igual a 15.
             {
-                gameOver("Has ganado la partida! :)"); // Llama al método gameOver diciendo que ganó la partida.
+                gameOver("Has ganado la partida! :) Presiona ENTER para continuar"); // Llama al método gameOver diciendo que ganó la partida.
             }
 
             if (ball.Top > 580) // Si la bola alcanzó el límite inferior del juego.
             {
-                gameOver("Lo siento, perdió la partida! :("); // Llama al método gameOver diciendo que perdió la partida.
+                gameOver("Lo siento, perdió la partida! :( Presiona ENTER para jugar otra vez"); // Llama al método gameOver diciendo que perdió la partida.
             }
         }
 
@@ -228,6 +247,12 @@ namespace Breakout_Game_APP_MOO_ICT
             if (e.KeyCode == Keys.Right) // Si la tecla presiona hacia la derecha.
             {
                 goRight = false; // No va hacia la derecha.
+            }
+
+            if (e.KeyCode == Keys.Enter && isGameOver == true) // Si la tecla presiona ENTER cuando acaba el juego.
+            {
+                removeBlocks(); // Llamado del método anterior para eliminar bloques.
+                PlaceBlocks(); // Llamado del método anterior para ordenar bloques.
             }
         }
     }
