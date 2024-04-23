@@ -6,6 +6,6 @@ https://www.mooict.com/c-tutorial-create-a-breakout-game-in-visual-studio/
 **_O también guiarte de ejemplo de cómo se crea el juego completo:_**
 https://www.youtube.com/watch?v=m18aCV-ox38
 
-Kind Regards
+_Kind Regards_
 
 MARSFOREVER472
